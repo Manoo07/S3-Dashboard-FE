@@ -8,7 +8,7 @@ const Retrieve = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/files');
+        const response = await axios.get('http://54.90.109.188/files');
         setFiles(response.data);
       } catch (error) {
         console.error('Error fetching files:', error);
@@ -33,7 +33,7 @@ const Retrieve = () => {
             <span>{file.Key}</span>
             <span>{Math.round((file.Size / 1024) * 1000) / 1000} K.B</span>
             <a 
-              href={`http://localhost:3001/download/${file.fileId}`}
+              href={`http://54.90.109.188/download/${file.fileId}`}
               className="hover:text-blue-600 cursor-pointer"
               download
             >

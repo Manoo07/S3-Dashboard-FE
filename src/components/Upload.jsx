@@ -20,7 +20,7 @@ const Upload = () => {
     formData.append('file', file);
     
     try {
-      await axios.post('http://localhost:3001/upload', formData);
+      await axios.post('http://54.90.109.188/upload', formData);
       alert('File uploaded successfully!');
     } catch (error) {
       console.error('Error uploading file:', error);

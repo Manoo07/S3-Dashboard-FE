@@ -6,7 +6,7 @@ const Download = () => {
 
   useEffect(() => {
     const fetchFiles = async () => {
-      const response = await axios.get('http://localhost:3001/downloads');
+      const response = await axios.get('http://54.90.109.188/downloads');
       setFiles(response.data);
     };
 
