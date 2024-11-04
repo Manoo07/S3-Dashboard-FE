@@ -8,7 +8,7 @@ const Retrieve = () => {
   useEffect(() => {
     const fetchFiles = async () => {
       try {
-        const response = await axios.get('http://54.90.109.188/files');
+        const response = await axios.get('http://3.212.165.152/api/files');
         setFiles(response.data);
       } catch (error) {
         console.error('Error fetching files:', error);
